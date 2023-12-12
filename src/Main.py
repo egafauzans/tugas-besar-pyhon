@@ -4,8 +4,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Membaca data dari file CSV pake pandas
-tes = pd.read_csv('tes.csv')
+## Membaca data dari file CSV pake pandas
+# tes = pd.read_csv()
+# lokasi si file csv nya di laptop ega
+tes = pd.read_csv("C:\\Users\\egafa\\Documents\\Telkom University\\Kuliah smt 3\\pemograman python\\tugas-besar-pyhon\\src\\tes.csv")
+
 
 ## Pre-processing data
 # Bikin data frame 
