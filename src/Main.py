@@ -14,6 +14,16 @@ dataFrame = pd.DataFrame(tes)
 # data cleaning, pembersihan data
 dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
 
-## Pengolahan data
-rataBerat = np.mean(data['Berat'])
-rataTinggi = np.mean(data['Tinggi'])
+## Pengolahan data pake numpy
+rataBerat = np.mean(tes['Berat'])
+rataTinggi = np.mean(tes['Tinggi'])
+
+## Visualisasi data pake matploylib
+plt.figure(figsize=(10,5))
+plt.plot(tes['Umur'], tes['Tinggi'], label='Tinggi')
+plt.plot(tes['Umur'], tes['Berat'], label='Berat')
+plt.xlabel('Umur')
+plt.ylabel('Nilai')
+plt.title('Visualisasi Data')
+plt.legend()
+plt.show()
