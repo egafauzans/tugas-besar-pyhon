@@ -14,3 +14,6 @@ dataFrame = pd.DataFrame(tes)
 # data cleaning, pembersihan data
 dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
 
+## Pengolahan data
+rataBerat = np.mean(data['Berat'])
+rataTinggi = np.mean(data['Tinggi'])
