@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 # lokasi si file csv nya di laptop ega
 tes = pd.read_csv("C:\\Users\\egafa\\Documents\\Telkom University\\Kuliah smt 3\\pemograman python\\tugas-besar-pyhon\\src\\tes.csv")
 
-
 ## Pre-processing data
 # Bikin data frame 
 dataFrame = pd.DataFrame(tes)
