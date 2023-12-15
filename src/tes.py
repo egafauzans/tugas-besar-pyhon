@@ -12,10 +12,10 @@ tes = pd.read_csv("C:\\Users\\egafa\\Documents\\Telkom University\\Kuliah smt 3\
 
 ## Pre-processing data
 # Bikin data frame 
-dataFrame = pd.DataFrame(tes)
+# dataFrame = pd.DataFrame(tes)
 
 # data cleaning, pembersihan data
-dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
+# dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
 
 ## Pengolahan data pake numpy
 rataBerat = np.mean(tes['Berat'])
