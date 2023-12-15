@@ -28,13 +28,14 @@ dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
 plt.figure(figsize=(10,6))
 
 # garis tiap tahunnya
-for tahun in range(2017, 2019):
+for tahun in range(2017, 2020):
     plt.plot(data['Bulan'], data[str(tahun)], marker='o')
 
-# kasih nama sumbu sumbu nya
+# kasih nama
 plt.title("Kunjungan Candi Borobudur")
 plt.xlabel("Bulan")
 plt.ylabel("Kunjungan")
+plt.legend(range(2017, 2020))
 
 plt.grid(True)
 
