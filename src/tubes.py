@@ -37,7 +37,7 @@ data['Bulan'] = [bulan[i-1] for i in data['Bulan']]
 
 ## Visualisasi data pake matploylib
 # set ukuran
-plt.figure(figsize=(16,9))
+plt.figure(figsize=(12,6))
 
 # garis tiap tahunnya
 for tahun in range(2017, 2020):
