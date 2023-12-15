@@ -42,3 +42,4 @@ plt.grid(True)
 # tampilin grafiknya
 plt.show()
 
+
