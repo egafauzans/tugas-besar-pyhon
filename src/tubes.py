@@ -15,12 +15,29 @@ data = pd.read_csv("C:\\Users\\egafa\\Documents\\Telkom University\\Kuliah smt 3
 # Bikin data frame 
 dataFrame = pd.DataFrame(data)
 
+# coba coba liat dataframe yang udah dibuat
+print(dataFrame)
+
 # data cleaning, pembersihan data
 dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
 
-print(dataFrame)
-
 ## Pengolahan data pake numpy
 
-
 ## Visualisasi data pake matploylib
+# set ukuran
+plt.figure(figsize=(10,6))
+
+# garis tiap tahunnya
+for tahun in range(2017, 2019):
+    plt.plot(data['Bulan'], data[str(tahun)], marker='o')
+
+# kasih nama sumbu sumbu nya
+plt.title("Kunjungan Candi Borobudur")
+plt.xlabel("Bulan")
+plt.ylabel("Kunjungan")
+
+plt.grid(True)
+
+# tampilin grafiknya
+plt.show()
+
