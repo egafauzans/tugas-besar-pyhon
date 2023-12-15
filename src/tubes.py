@@ -46,7 +46,7 @@ for tahun in range(2017, 2020):
 # kasih nama
 plt.title("Kunjungan Candi Borobudur")
 plt.xlabel("Bulan")
-plt.ylabel("Kunjungan")
+plt.ylabel("Jumlah Kunjungan")
 plt.legend(range(2017, 2020))
 
 # kasih grid grid nya
