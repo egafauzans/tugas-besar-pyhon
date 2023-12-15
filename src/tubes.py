@@ -37,7 +37,7 @@ data['Bulan'] = [bulan[i-1] for i in data['Bulan']]
 
 ## Visualisasi data pake matploylib
 # set ukuran
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(12,6))
 
 # garis tiap tahunnya
 for tahun in range(2017, 2020):
@@ -49,7 +49,18 @@ plt.xlabel("Bulan")
 plt.ylabel("Kunjungan")
 plt.legend(range(2017, 2020))
 
+# kasih grid grid nya
 plt.grid(True)
+
+# biar sumbu y nya lebih banyak angkanya (kelipatan 5)
+# Ubah semua data menjadi numerik
+data = data.apply(pd.to_numeric, errors='coerce')
+data = data.fillna(0)
+nilaiMax = int(max(data.max()))
+
+ticks = np.arange(0, nilaiMax+5, 5)
+labels = [str(i) for i in ticks]
+plt.yticks(ticks, labels)
 
 # tampilin grafiknya
 plt.show()
