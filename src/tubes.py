@@ -21,7 +21,19 @@ print(dataFrame)
 # data cleaning, pembersihan data
 dataFrame.isnull().sum() # ngecek ada data yang ilang ngga
 
+# kalo ada yang ilang ganti jadi 0
+data = data.fillna(0)
+
 ## Pengolahan data pake numpy
+
+# ubah tipe data jadi integer
+for tahun in range(2017, 2020):
+    data[str(tahun)] = data[str(tahun)].astype(int)
+
+# ubah angka bulan jadi nama nama bulan
+bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+data['Bulan'] = [bulan[i-1] for i in data['Bulan']]
+
 
 ## Visualisasi data pake matploylib
 # set ukuran
